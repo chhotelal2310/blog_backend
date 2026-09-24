@@ -21,10 +21,6 @@ const PostShema = new mongoose.Schema(
       type: [String],
       default: [],
     },
-    unlikes: {
-      type: [String],
-      default: [],
-    },
   },
 
   {
