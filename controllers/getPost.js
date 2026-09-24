@@ -24,8 +24,8 @@ export const getAllPost = async (req, res) => {
 
 export const getPost = async (req, res) => {
   try {
-    const { postId } = req.parasm;
-    const result = await Post.findById(postId);
+    const { id } = req.params;
+    const result = await Post.findById(id);
     if (!result) {
       return res.status(404).json({
         success: false,
